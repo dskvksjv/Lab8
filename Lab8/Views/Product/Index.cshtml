@@ -1,0 +1,33 @@
+﻿@model List<Lab8.Models.Product>
+<link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+
+<h1>Products</h1>
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.ID. @product.Name - @product.Price$ (@product.CreatedDate)</li>
+    }
+</ul>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Created Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ID</td>
+                <td>@product.Name</td>
+                <td>@product.Price$</td>
+                <td>@product.CreatedDate</td>
+            </tr>
+        }
+    </tbody>
+</table>

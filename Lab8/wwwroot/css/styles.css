@@ -1,0 +1,22 @@
+﻿body {
+    background-color: #FFB6C1; 
+    color: white; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px; 
+}
+ul {
+    text-align: justify;
+    margin-right: 280px;
+    list-style-type: circle; 
+}
+table {
+    border: 1px solid #FFB6C1; 
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center; 
+    width: 80%; 
+}
+table th, table td {
+        border: 1px solid white;
+}
